@@ -3,7 +3,6 @@ const client = new Discord.Client();
 
 client.on('ready', () => {
     console.log('I am ready!');
-	await client.change_presence(game=discord.Game(name='Test'))
 });
 
 client.on('message', message => {
