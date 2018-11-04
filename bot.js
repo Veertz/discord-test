@@ -2,8 +2,8 @@ const Discord = require('discord.js');
 const client = new Discord.Client();
 
 client.on('ready', () => {
-	await client.change_presence(game=discord.Game(name='Test'))
     console.log('I am ready!');
+	await client.change_presence(game=discord.Game(name='Test'))
 });
 
 client.on('message', message => {
