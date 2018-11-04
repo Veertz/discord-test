@@ -6,13 +6,8 @@ client.on('ready', () => {
 });
 
 client.on('message', message => {
-	if (message.content == '!texturepack') {
-		message.channel.sendMessage('ZodiacHCF: http://www.mediafire.com/file/u73mo15efqik6fa/ZodiacHCF.zip/file');
-		message.channel.sendMessage('ZodiacHCF 6x6: http://www.mediafire.com/file/pt2rmukncjkj9hd/Zodiac_6x6.zip/file');
-	}
-	if (message.content == '!txp') {
-		message.channel.sendMessage('ZodiacHCF: http://www.mediafire.com/file/u73mo15efqik6fa/ZodiacHCF.zip/file');
-		message.channel.sendMessage('ZodiacHCF 6x6: http://www.mediafire.com/file/pt2rmukncjkj9hd/Zodiac_6x6.zip/file');
+	if (message.content == '!link') {
+		message.channel.sendMessage('https://discord.gg/4ke4Vm9');
 	}
 });
 
