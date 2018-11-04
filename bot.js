@@ -10,14 +10,15 @@ client.on('message', message => {
 		message.channel.sendMessage('https://discord.gg/4ke4Vm9');
 	}
 });
-public class status : ModuleBase<SocketCommandContext>
+public class Help : ModuleBase<SocketCommandContext>
 {
-  private DiscordSocketClient _client;
-  public async Task StatusAsync()
-  {
-     var status = "eating doritos";
-     await _client.SetGameAsync(string status, string streamUrl = null, ActivityType type = Playing);
-  }
+    [Command("test")]
+    public async Task TestAsync()
+    {
+        await Context.Client.SetGameAsync("eating doritos");
+
+        await Task.CompletedTask;
+    }
 }
 
 // THIS  MUST  BE  THIS  WAY
