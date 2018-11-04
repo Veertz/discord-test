@@ -7,6 +7,10 @@ client.on('ready', () => {
 });
 
 client.on('message', message => {
+	if (message.content == '!ayuda') {
+		message.author.send("Holii");
+	}
+client.on('message', message => {
 	if (message.content == '!link') {
 		message.channel.sendMessage('https://discord.gg/4ke4Vm9');
 	}
