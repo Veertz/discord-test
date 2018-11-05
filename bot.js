@@ -10,6 +10,8 @@ client.on('message', message => {
 	if (message.content == '!link') {
 		message.channel.sendMessage('https://discord.gg/4ke4Vm9');
 	}
+	if (message.content == '!ayuda') {
+		message.member.send('Usa !link para obtener una invitacion permanente\nTen un buen dia!')
 });
 
 // THIS  MUST  BE  THIS  WAY
